@@ -111,3 +111,20 @@ body {
   transition: transform 0.3s ease;
   pointer-events: none;
 }
+.lives {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+}
+
+.difficulty {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.difficulty-btn {
+  font-size: 10px;
+}
