@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Catch The Insect</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- SCREEN 1 -->
+  <div class="screen" id="screen1">
+    <h1 style="font-size: 20px; line-height: 1.8;">Catch The<br>Insect</h1>
+    <button class="btn" id="start-btn">Play Game</button>
+  </div>
+
+  <!-- SCREEN 2 -->
+  <div class="screen" id="screen2">
+    <h1 style="font-size: 16px;">Choose Your Insect</h1>
+    <h2>Select Difficulty</h2>
+<div class="difficulty">
+  <button class="btn difficulty-btn" data-speed="1500">Easy</button>
+  <button class="btn difficulty-btn" data-speed="1000">Medium</button>
+  <button class="btn difficulty-btn" data-speed="600">Hard</button>
+</div>
+<ul class="insects-list">
+      <li>
+        <button class="choose-insect-btn">
+          <img src="http://pngimg.com/uploads/fly/fly_PNG3946.png" alt="fly">
+          <span>Fly</span>
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <img src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png" alt="mosquito">
+          <span>Mosquito</span>
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <img src="http://pngimg.com/uploads/spider/spider_PNG12.png" alt="spider">
+          <span>Spider</span>
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <img src="http://pngimg.com/uploads/roach/roach_PNG12163.png" alt="roach">
+          <span>Roach</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SCREEN 3: GAME -->
+  <div class="screen" id="screen3">
+    <span class="time" id="time">Time: 00:00</span>
+    <span class="score" id="score">Score: 0</span>
+    <h3 id="lives" class="lives">Lives: 3</h3>
+    <div class="message" id="message"></div>
+  </div>
+
+</body>
+</html>
